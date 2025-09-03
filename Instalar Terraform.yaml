@@ -1,0 +1,10 @@
+Instalar Terraform
+- terraform.io
+- baixar no site
+- mv /usr/local/bin/terraform
+- terraform -v
+
+tfenv
+tfenv install [version]
+tfenv use [version]
+tfenv list
