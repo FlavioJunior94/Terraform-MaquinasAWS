@@ -1,0 +1,23 @@
+Instalar Terraform
+- terraform.io
+- baixar no site
+- mv /usr/local/bin/terraform
+- terraform -v
+
+tfenv                             # mostra ajuda do tfenv (gerenciador de versões do Terraform)
+tfenv install [version]           # instala a versão do Terraform especificada
+tfenv use [version]               # define qual versão do Terraform será usada
+tfenv list                        # lista versões instaladas e qual está ativa
+
+terraform init                    # inicializa o diretório, baixa plugins/providers
+terraform plan                    # mostra as mudanças que o Terraform vai aplicar
+terraform apply                   # aplica as mudanças na infraestrutura
+terraform validate                # valida se a sintaxe e a configuração estão corretas
+terraform fmt                     # formata os arquivos .tf no padrão oficial
+
+terraform destroy                 # destrói todos os recursos gerenciados pelo Terraform
+
+terraform plan -out="tfplan.out"  # gera o plano de execução e salva no arquivo "tfplan.out"
+terraform apply "tfplan.out"      # você pode aplicar exatamente aquele plano (sem recalcular)
+
+instancia ec2 : ami-00ca32bbc84273381
